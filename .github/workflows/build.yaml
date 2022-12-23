@@ -49,11 +49,19 @@ jobs:
           ls -l
 
       
+
+
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         env:
-          GITHUB_TOKEN: "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"  # ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_HOST_URL: sonarcloud.io
+        with:
+          projectBaseDir: .
+          args: >
+            -Dsonar.organization=Malik20A
+            -Dsonar.projectKey=artemis-scan
+            -Dsonar.verbose=true
 
 
       # Runs a set of commands using the runners shell
