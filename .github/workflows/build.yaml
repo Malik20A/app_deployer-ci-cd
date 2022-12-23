@@ -63,7 +63,7 @@ jobs:
       - name: Build Image
         working-directory: ${{ env.app_name }}
         run: |
-          # docker image prune -af
+          # docker image prune -af 
           docker build -t ${{ env.app_name }}:${{ env.app_version }}   . 
 
 
