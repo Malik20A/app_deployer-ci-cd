@@ -61,7 +61,7 @@ jobs:
         with:
           projectBaseDir: .
           args: >
-            -Dsonar.organization=malik20a
+            -Dsonar.organization=Malik20A
             -Dsonar.projectKey=artemis-scan
             -Dsonar.verbose=true
 
