@@ -48,11 +48,6 @@ jobs:
           git checkout ${{ env.app_version }}
           ls -l
 
-      
-
-
-
-
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         env:
