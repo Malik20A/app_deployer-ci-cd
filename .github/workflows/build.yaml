@@ -51,6 +51,8 @@ jobs:
       
 
 
+
+
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         env:
@@ -59,7 +61,7 @@ jobs:
         with:
           projectBaseDir: .
           args: >
-            -Dsonar.organization=Malik20A
+            -Dsonar.organization=malik20a
             -Dsonar.projectKey=artemis-scan
             -Dsonar.verbose=true
 
