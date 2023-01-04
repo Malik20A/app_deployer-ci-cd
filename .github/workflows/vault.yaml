@@ -22,6 +22,7 @@ jobs:
         run: |
           terraform init 
 
-      # - name: Apply
-      #   run:
-      #     terraform apply -auto-approve
+      - name: Apply
+        working-directory: RDS
+        run:
+          terraform apply -auto-approve
